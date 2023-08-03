@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_two"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginTop="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:orientation="vertical"
+        android:background="@color/color_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="3dp"
+                android:layout_weight="3"
+                android:fontFamily="@font/muli_black"
+                android:text="Student Name"
+                android:textColor="#02707E"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/muli_black"
+                android:text="Roll No:"
+                android:textColor="#02707E"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/student_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:fontFamily="@font/muli_semibold"
+                android:padding="5dp"
+                android:text="Yaqoob Shah Khan Syed"
+                android:textColor="#02707E"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/rollNo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/muli_semibold"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="5dp"
+                android:text="1000"
+                android:textColor="#02707E"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radiagroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/present_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/muli_semibold"
+                android:text=" Present"
+                android:textColor="#02707E"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/late_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/muli_semibold"
+                android:text=" Late"
+                android:textColor="#02707E"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/absent_check"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/muli_semibold"
+                android:text=" Absent"
+                android:textColor="#02707E"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/leave_check"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/muli_semibold"
+                android:text=" Leave"
+                android:textColor="#02707E"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

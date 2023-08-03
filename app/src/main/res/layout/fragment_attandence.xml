@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginHorizontal=".5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".fragments.AttendanceFragment">
+
+    <LinearLayout
+        android:id="@+id/mainL_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="2dp"
+            app:searchIcon="@drawable/ic_person_search"
+            android:background="@color/app_color_main"
+            android:gravity="center"
+            app:queryHint="Search here" />
+
+        <LinearLayout
+            android:id="@+id/calendarView"
+            android:layout_width="327dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="2dp"
+            android:background="@color/app_color_main"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:padding="4dp"
+                android:src="@drawable/ic_calendar" />
+
+            <TextView
+                android:id="@+id/current_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_black"
+                android:layout_marginEnd="8dp"
+                android:text="dd-mm-yyyy"
+                android:textColor="@color/textColor"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/status_menu"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:padding="3dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/ic_radio_button_checked"
+            android:background="@color/app_color_main"/>
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/student_recyclerview_xml"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="3dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#F6F0F0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/submit_attendance"
+        app:layout_constraintTop_toBottomOf="@id/mainL_layout" />
+
+
+    <Button
+        android:id="@+id/submit_attendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        style="@style/Widget.App.MyButtonStyle"
+        android:text="submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

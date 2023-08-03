@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_help"
+        android:title="@string/help_videos"
+        android:icon="@drawable/ic_help"/>
+
+    <item
+        android:id="@+id/nav_aboutUs"
+        android:title="@string/about_us_mnu"
+        android:icon="@drawable/ic_about_us"/>
+
+
+    <item
+        android:id="@+id/nav_exit"
+        android:title="@string/quit"
+        android:icon="@drawable/ic__exit_to_app"/>
+
+
+</menu>

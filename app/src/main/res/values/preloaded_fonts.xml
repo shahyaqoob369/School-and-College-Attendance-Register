@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/asap_bold</item>
+        <item>@font/audiowide</item>
+        <item>@font/bubbler_one</item>
+        <item>@font/days_one</item>
+        <item>@font/fredoka_one</item>
+        <item>@font/muli_black</item>
+        <item>@font/muli_light</item>
+        <item>@font/muli_semibold</item>
+        <item>@font/pacifico</item>
+        <item>@font/patua_one</item>
+        <item>@font/ubuntu_bold</item>
+        <item>@font/varela_round</item>
+        <item>@font/wendy_one</item>
+    </array>
+</resources>

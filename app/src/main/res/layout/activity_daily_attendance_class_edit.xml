@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp"
+    android:background="@color/color_white"
+    tools:context=".DailyAttendanceEditActivity">
+
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView_edit"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/app_color_main"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:queryHint="Search here"
+        app:searchIcon="@drawable/ic_person_search" />
+
+
+    <LinearLayout
+        android:id="@+id/ClsEdit_calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="48dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/app_color_main">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:src="@drawable/ic_calendar" />
+
+        <TextView
+            android:id="@+id/ClsEdit_recive_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli_black"
+            android:layout_marginEnd="50dp"
+            android:text="dd-mm-yyyy"
+            android:textColor="@color/textColor"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ClsEdit_recyclerview_xml"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="3dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#F6F0F0"
+        app:layout_constraintBottom_toTopOf="@id/clsEdit_submitBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView_edit" />
+
+
+    <Button
+        android:id="@+id/clsEdit_submitBtn"
+        style="@style/Widget.App.MyButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="Save Edit"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

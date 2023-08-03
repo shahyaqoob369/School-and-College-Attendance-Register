@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">AttendanceHome</string>
+    <string name="teacher_message">Teaching is the greatest act of optimism</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!--to toggle the open close button
+        of the navigation drawer-->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+    <string name="present">Present</string>
+    <string name="absent">Absent</string>
+    <string name="leave">Leave</string>
+    <string name="late">Late</string>
+
+    <string name="note_text_ii">No. 1: Excel sheet must be save as .xls format\nNo. 2: Three rows same as in the sample sheet</string>
+    <string name="note_text_iii">A: SN#,   B: Name,   C: Roll No</string>
+    <string name="all_present">All Present</string>
+    <string name="all_late">All Late</string>
+    <string name="all_absent">All Absent</string>
+    <string name="all_leave">All Leave</string>
+
+    <string name="title_1">Digital Attendance App</string>
+    <string name="title_2">Unique Features</string>
+    <string name="title_3">Detailed Class Report</string>
+    <string name="title_4">Hints</string>
+
+    <string name="description_1">>	Easy and Tireless Digital Attendance Management\n
+>	Reduced Errors in Participation Data\n
+>	Making Environment Eco-Friendly by Reducing Usage of Paper
+</string>
+
+    <string name="description_2">
+        >	Import Students list form excel sheet\n
+        >	Add students list as group at once\n
+>	Individual attendance ratio/percentage\n
+>	Export/Print detailed monthly Reports\n
+>	Edit Previous Attendance\n
+>	StruckOff/Expel an Individual
+</string>
+
+    <string name="description_3">>	Attendance Colorful Pie-Chart\n
+>	List of Each Day Attendance\n
+>	Various Attendance Computations
+</string>
+
+    <string name="description_4">>	H = Sunday/Holiday\n
+        >	P = Present\n
+>	A = Absent\n
+>	L = Leave
+</string>
+
+    <string name="rollNo">Roll no</string>
+    <string name="total_P">Total P</string>
+    <string name="total_A">Total A</string>
+    <string name="total_L">Total L</string>
+    <string name="p_percentage">Present %</string>
+    <string name="name">Name</string>
+    <string name="help_stdnt_rpt_1">Click on student name for attendance report</string>
+    <string name="help_2">LongPress on student name for Struck/Re-Admit</string>
+    <string name="help_stdent_3">+ Click for add Student</string>
+    <string name="please_wait">Please Wait. . .</string>
+    <string name="save_as">Save as</string>
+    <string name="re_admit">Re-Admit</string>
+    <string name="struck_off">StruckOff</string>
+    <string name="version_txt">v_4.0</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="help_txt1">LongPress on student name for Struck/Re-Admit</string>
+    <string name="range_dialog_note_text">Here You can Just add a Roll Numbers Range without name</string>
+    <string name="present_percentage">Present %</string>
+    <string name="total">Total</string>
+    <string name="a_code">.@2022–2022 a-code\nCopyright\nAll Right Reserved</string>
+    <string name="about_a_code">This app is an ultimate representation of the dedication of a-code Team towards technological advancement of educational systems. We believe that access to education should be low cost, worthy and efficient.</string>
+    <string name="delete">Delete</string>
+    <string name="report">Report</string>
+    <string name="share_report">Share Report</string>
+    <string name="help_for_edit">Click on attendance date for EDIT</string>
+    <string name="help_videos">Help Videos</string>
+    <string name="about_us_mnu">About Us</string>
+    <string name="quit">Quit</string>
+    <string name="watch_full_help_video">Full Guid (7:32)</string>
+    <string name="how_to_create_xls_file">Excel Sample Sheet.xls file demo</string>
+    <string name="btn_play">Play</string>
+    <string name="main_banner_ad">ca-app-pub-9804933895261146/3623603554</string>
+    <string name="interstitial_ad">ca-app-pub-9804933895261146/8665528310</string>
+
+</resources>

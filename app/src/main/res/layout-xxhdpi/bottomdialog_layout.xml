@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="1dp"
+    android:background="@color/whitetransperent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#E4000000">
+
+        <TextView
+            android:id="@+id/delete_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_delete"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/muli_black"
+            android:gravity="center"
+            android:text="Delete"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/editclass_name"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="40dp"-->
+<!--            android:drawableTop="@drawable/ic_edit"-->
+<!--            android:fontFamily="@font/muli_black"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Edit"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="12sp" />-->
+
+        <TextView
+            android:id="@+id/report_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli_black"
+            android:layout_marginStart="40dp"
+            android:drawableTop="@drawable/ic_class_report"
+            android:text="Report"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/report_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli_black"
+            android:layout_marginStart="40dp"
+            android:drawableTop="@drawable/ic_share"
+            android:text="Share Report"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

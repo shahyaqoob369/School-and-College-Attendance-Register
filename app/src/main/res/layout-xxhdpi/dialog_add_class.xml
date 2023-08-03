@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="2dp"
+    android:layout_margin="5dp"
+    android:background="@color/whitetransperent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardElevation="15dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add New Class"
+                android:textSize="22sp"
+                android:layout_marginBottom="8dp"
+                android:padding="8dp"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"
+                android:fontFamily="@font/muli_black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@color/purple_700"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:hint="Class"
+                app:hintAnimationEnabled="true"
+                app:startIconDrawable="@drawable/ic_class"
+                android:textColorHint="@color/purple_700"
+                app:endIconMode="clear_text"
+                app:helperText="Required*"
+                app:helperTextTextColor="@color/card_red">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/addClass_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:background="#E7F9F1"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancelBtn_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:fontFamily="@font/muli_black"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textColor"
+                    android:textSize="12sp"
+                    style="@style/Widget.App.MyButtonStyle"/>
+
+                <Button
+                    android:id="@+id/createBtn_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:fontFamily="@font/muli_black"
+                    android:text="Create"
+                    android:textAllCaps="false"
+                    android:textColor="@color/textColor"
+                    android:textSize="12sp"
+                    style="@style/Widget.App.MyButtonStyle"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

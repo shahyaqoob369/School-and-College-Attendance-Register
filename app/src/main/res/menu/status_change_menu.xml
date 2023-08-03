@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/all_present"
+        android:title="@string/all_present" />
+
+    <item
+        android:id="@+id/all_late"
+        android:title="@string/all_late"/>
+
+    <item
+        android:id="@+id/all_absent"
+        android:title="@string/all_absent" />
+
+    <item
+        android:id="@+id/all_leave"
+        android:title="@string/all_leave"/>
+
+
+</menu>
